@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 500" width="1500" height="500">
+  <!-- Pitch black background -->
+  <rect width="1500" height="500" fill="#000000"/>
+
+  <!-- LEFT SIDE: Circular container with multi-headed hydra logo -->
+  <g id="logo-container">
+    <!-- Circle stroke -->
+    <circle cx="220" cy="250" r="140" fill="none" stroke="#10b981" stroke-width="3"/>
+
+    <!-- Multi-headed hydra with diverging arrows -->
+    <!-- Central body -->
+    <path d="M 220 280 L 220 320" stroke="#10b981" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Three heads/arrows diverging from center -->
+    <!-- Left head with arrow -->
+    <path d="M 220 250 L 160 200 M 150 210 L 160 200 L 170 210" stroke="#10b981" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+    <!-- Center head with arrow -->
+    <path d="M 220 250 L 220 180 M 210 190 L 220 180 L 230 190" stroke="#10b981" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+    <!-- Right head with arrow -->
+    <path d="M 220 250 L 280 200 M 270 210 L 280 200 L 290 210" stroke="#10b981" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+    <!-- Additional diverging paths for "multi-model" effect -->
+    <path d="M 220 250 L 150 280 M 140 275 L 150 280 L 150 290" stroke="#10b981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.7"/>
+    <path d="M 220 250 L 290 280 M 290 270 L 290 280 L 300 280" stroke="#10b981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.7"/>
+  </g>
+
+  <!-- RIGHT SIDE: Text content -->
+  <g id="text-content">
+    <!-- Main title -->
+    <text x="450" y="200" font-family="system-ui, -apple-system, sans-serif" font-size="72" font-weight="800" fill="#10b981" letter-spacing="2">
+      HYDRA
+    </text>
+
+    <!-- Subtitle 1 -->
+    <text x="450" y="250" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" fill="#9ca3af" letter-spacing="4" text-transform="uppercase">
+      MULTI-MODEL ARBITRAGE ENGINE
+    </text>
+
+    <!-- Subtitle 2 -->
+    <text x="450" y="290" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="400" fill="#6b7280">
+      Route every prompt to the optimal AI model
+    </text>
+
+    <!-- Version badge -->
+    <g id="version-badge" transform="translate(1320, 420)">
+      <rect x="0" y="0" width="120" height="40" rx="20" ry="20" fill="none" stroke="#10b981" stroke-width="2"/>
+      <text x="60" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" fill="#10b981" text-anchor="middle">
+        v1.0
+      </text>
+    </g>
+  </g>
+</svg>

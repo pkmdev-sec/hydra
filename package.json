@@ -1,0 +1,37 @@
+{
+  "name": "@pkmdev-sec/hydra",
+  "version": "1.0.0",
+  "description": "Compare LLM responses by quality and cost, then learn model preferences by task type",
+  "type": "module",
+  "main": "lib/multi-sender.mjs",
+  "exports": {
+    ".": "./lib/multi-sender.mjs",
+    "./multi-sender": "./lib/multi-sender.mjs",
+    "./quality-comparator": "./lib/quality-comparator.mjs",
+    "./cost-optimizer": "./lib/cost-optimizer.mjs",
+    "./learning-engine": "./lib/learning-engine.mjs"
+  },
+  "files": [
+    "lib",
+    "hooks/hydra-router.py",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test tests/test-*.mjs && python3 tests/test-hydra-router.py"
+  },
+  "keywords": ["ai", "llm", "multi-model", "arbitrage", "routing", "optimization"],
+  "author": "pkmdev-sec",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pkmdev-sec/hydra.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pkmdev-sec/hydra/issues"
+  },
+  "homepage": "https://github.com/pkmdev-sec/hydra#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
